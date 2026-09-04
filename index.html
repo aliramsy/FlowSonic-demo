@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlowSonic — Audio Editing</title>
+
+    <meta
+        name="description"
+        content="FlowSonic: Fast and efficient audio editing using rectified flow."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     Navigation
+========================= -->
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">
+            FlowSonic
+        </div>
+
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#method">Method</a>
+            <a href="#results">Results</a>
+            <a href="#examples">Audio Examples</a>
+            <a href="#citation">Citation</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     Hero Section
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>FlowSonic</h1>
+
+        <p class="subtitle">
+            Fast and Efficient Audio Editing with Rectified Flow
+        </p>
+
+        <p class="authors">
+            Ali Boudaghi, and collaborators
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="button primary"
+                href="#examples"
+            >
+                Listen to Examples
+            </a>
+
+            <a
+                class="button secondary"
+                href="#"
+                target="_blank"
+            >
+                Paper
+            </a>
+
+            <a
+                class="button secondary"
+                href="#"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Overview
+========================= -->
+
+<section id="overview" class="section">
+
+    <div class="container">
+
+        <h2>Overview</h2>
+
+        <p>
+            FlowSonic is a fast audio editing framework designed to
+            efficiently modify audio while preserving the characteristics
+            of the original recording.
+        </p>
+
+        <p>
+            The method exploits the structure of rectified-flow based
+            generative models to perform efficient inversion and editing,
+            reducing the computational cost while maintaining high-quality
+            audio generation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Method
+========================= -->
+
+<section id="method" class="section gray">
+
+    <div class="container">
+
+        <h2>Method</h2>
+
+        <p class="section-intro">
+            Overview of the FlowSonic editing pipeline.
+        </p>
+
+        <div class="method-image">
+
+            <img
+                src="images/pipeline.png"
+                alt="FlowSonic pipeline"
+            >
+
+        </div>
+
+        <div class="method-description">
+
+            <div class="method-card">
+
+                <h3>1. Source Audio</h3>
+
+                <p>
+                    The original audio provides the content that should
+                    be preserved during editing.
+                </p>
+
+            </div>
+
+            <div class="method-card">
+
+                <h3>2. Inversion</h3>
+
+                <p>
+                    The source signal is mapped into the generative
+                    trajectory to obtain a representation suitable
+                    for editing.
+                </p>
+
+            </div>
+
+            <div class="method-card">
+
+                <h3>3. Feature Injection</h3>
+
+                <p>
+                    Relevant information from the source trajectory is
+                    preserved during the editing process.
+                </p>
+
+            </div>
+
+            <div class="method-card">
+
+                <h3>4. Edited Audio</h3>
+
+                <p>
+                    The modified signal is generated while maintaining
+                    the important characteristics of the original audio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Results
+========================= -->
+
+<section id="results" class="section">
+
+    <div class="container">
+
+        <h2>Results</h2>
+
+        <p class="section-intro">
+            Qualitative comparison of FlowSonic with existing audio
+            editing approaches.
+        </p>
+
+        <div class="results-grid">
+
+            <div class="result-card">
+
+                <div class="result-number">
+                    01
+                </div>
+
+                <h3>Editing Quality</h3>
+
+                <p>
+                    FlowSonic aims to preserve the source audio while
+                    applying the requested semantic modification.
+                </p>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <div class="result-number">
+                    02
+                </div>
+
+                <h3>Efficiency</h3>
+
+                <p>
+                    The proposed inference procedure reduces the number
+                    of expensive model evaluations required for editing.
+                </p>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <div class="result-number">
+                    03
+                </div>
+
+                <h3>Audio Consistency</h3>
+
+                <p>
+                    Source information is explicitly preserved during
+                    the editing trajectory.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Audio Examples
+========================= -->
+
+<section id="examples" class="section gray">
+
+    <div class="container">
+
+        <h2>Audio Examples</h2>
+
+        <p class="section-intro">
+            Listen to the source audio and compare the edited results
+            produced by FlowSonic and competing methods.
+        </p>
+
+
+        <!-- Example 01 -->
+
+        <div class="example">
+
+            <div class="example-header">
+
+                <div>
+                    <span class="example-label">
+                        Example 01
+                    </span>
+
+                    <h3>Audio Editing Example</h3>
+                </div>
+
+                <p class="instruction">
+                    Editing instruction: Replace this text with your
+                    actual editing instruction.
+                </p>
+
+            </div>
+
+
+            <div class="audio-table">
+
+                <!-- Source -->
+
+                <div class="audio-row">
+
+                    <div class="method-name source-name">
+                        <span class="dot source-dot"></span>
+                        Source
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example01/source.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FlowSonic -->
+
+                <div class="audio-row highlight">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        FlowSonic
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example01/flowsonic.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Baseline 1 -->
+
+                <div class="audio-row">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        Baseline 1
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example01/baseline1.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Baseline 2 -->
+
+                <div class="audio-row">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        Baseline 2
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example01/baseline2.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Example 02 -->
+
+        <div class="example">
+
+            <div class="example-header">
+
+                <div>
+                    <span class="example-label">
+                        Example 02
+                    </span>
+
+                    <h3>Audio Editing Example</h3>
+                </div>
+
+                <p class="instruction">
+                    Editing instruction: Replace this text with your
+                    actual editing instruction.
+                </p>
+
+            </div>
+
+
+            <div class="audio-table">
+
+                <div class="audio-row">
+
+                    <div class="method-name source-name">
+                        <span class="dot source-dot"></span>
+                        Source
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example02/source.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <div class="audio-row highlight">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        FlowSonic
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example02/flowsonic.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <div class="audio-row">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        Baseline 1
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example02/baseline1.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+
+                <div class="audio-row">
+
+                    <div class="method-name">
+                        <span class="dot"></span>
+                        Baseline 2
+                    </div>
+
+                    <div class="audio-player">
+
+                        <audio
+                            controls
+                            preload="metadata"
+                            src="audio/example02/baseline2.wav"
+                        ></audio>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Citation
+========================= -->
+
+<section id="citation" class="section">
+
+    <div class="container">
+
+        <h2>Citation</h2>
+
+        <p>
+            If you find FlowSonic useful in your research, please
+            consider citing our work.
+        </p>
+
+        <div class="citation-box">
+
+<pre>@article{flowsonic2026,
+  title   = {FlowSonic: ...},
+  author  = {Boudaghi, Ali and ...},
+  journal = {...},
+  year    = {2026}
+}</pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 FlowSonic
+        </p>
+
+        <p>
+            Built for research and reproducibility.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
